@@ -16,7 +16,7 @@ class Solution:
         
         minutes.sort()
         
-        min_diff = float('inf')  # Initialize to a large number
+        min_diff = float('inf') 
         for i in range(1, len(minutes)):
             min_diff = min(min_diff, minutes[i] - minutes[i - 1])
             circular_diff = 1440 - minutes[-1] + minutes[0]
